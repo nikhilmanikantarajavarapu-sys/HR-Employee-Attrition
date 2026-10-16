@@ -1,41 +1,17 @@
 {% extends "base.html" %}
-
-{% block title %}Contact - HR Employee Attrition System{% endblock %}
-
+{% block title %}Contact — HR Attrition System{% endblock %}
 {% block content %}
-
-<div class="page">
-    <h1>✉️ Contact HR Analytics Team</h1>
-    <p>For questions, support, or feedback regarding the HR Employee Attrition AI platform, submit a message below.</p>
-
-    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to the HR Analytics support team.');">
-        <div class="form-group">
-            <label for="contactName">Name</label>
-            <input type="text" id="contactName" placeholder="Enter your full name" required>
-        </div>
-
-        <div class="form-group">
-            <label for="contactEmail">Work Email</label>
-            <input type="email" id="contactEmail" placeholder="Enter your work email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="contactSubject">Subject</label>
-            <select id="contactSubject">
-                <option>General Inquiry</option>
-                <option>Model Accuracy Feedback</option>
-                <option>Custom HR Dataset Integration</option>
-                <option>Technical Support</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="contactMessage">Message</label>
-            <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
-        </div>
-
-        <button type="submit">Send Message</button>
-    </form>
+<div class="container">
+  <div class="page-header">
+    <h1>Contact & System Inquiries</h1>
+    <p>Reach out with inquiries regarding HR ERP integrations, batch pipelines, or model governance.</p>
+  </div>
+  <div class="card">
+    <div style="line-height: 2;">
+      <div>📍 <strong>System:</strong> HR Employee Attrition Intelligence System</div>
+      <div>⚡ <strong>Serving API:</strong> <code>/api/predict</code> (JSON REST)</div>
+      <div>📦 <strong>Registry:</strong> <code>models/*.pkl</code> &bull; MLflow Model Registry</div>
+    </div>
+  </div>
 </div>
-
 {% endblock %}
